@@ -16,5 +16,7 @@ var nomecompleto = nome+" " +sobrenome; // usando dessa maneira com o sinal de +
 
 console.log(nomecompleto);
 window.alert(nomecompleto);
+console.log('O código vai dar certo')
+console.log("Aqui pode editar!!!")
 
 
