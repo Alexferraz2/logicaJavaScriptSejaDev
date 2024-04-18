@@ -1,0 +1,21 @@
+.texto {
+    width: 200px;
+    height: 900px;
+    overflow: auto; /* o overflow no auto serve para se o conteúdo não couber no espaço informado, ele criará um scroll */
+    background-color: #ccc;
+    padding: 20px;
+    border: 2px solid #FF0000;
+}
+
+.scrollbuntton {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #FF0000;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}

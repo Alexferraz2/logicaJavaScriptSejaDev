@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+
+    <p>
+        Selecionando elementos <br> <br>
+        pelo Id é document.getElementbyId('Escre a Id do elemento') <br>
+        pela classe é document.getElementsbyclassname('Escre a classe do elemento') <br>
+        pela tag é document.getElementsbyTagName('Escre a tag do elemento') <br>
+        pela propriedade 'Name' é document.getElementsbyName('Escre a propriedade Name do elemento') <br> <br>
+        e ainda temos uma outra maneira de selecionar que é pelo document.queryselector(''), dentro dos parenteses colocamos as id, classe, tag e atributo Name, como informamos dentro do CSS, exemplo da seleção da id que temos no html: document.queryselector('#exemplo'), se for classe será assim document.queryselector('.lista'), mas dessa maneira ele irá pegar o conteúdo da primeira classe lista, para pegar todas as classes lista tem que ser feito dessa maneira document.queryselectorall('.lista')
+
+
+
+    </p>
+    <div id="exemplo">Alexsandro</div>
+
+    <div class="lista">
+        Arroz, feijão, macarrão.
+    </div>
+
+    <div class="lista">
+        Água, Refrigerante e Cerveja.
+    </div>
+
+    <button>Algum botão</button>
+
+    <input type="text">
+
+    <script type="text/javascript" src="dom.js"></script>
+</body>
+</html>

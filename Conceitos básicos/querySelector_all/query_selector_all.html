@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerySelectorAll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <h1 id="titulo">Seja bem vindo(a)</h1>
+
+    <h2>queryselector</h2>
+
+    <p>O queryselector ele serve para selecionar elementos, id ou classes que temos no html. O código se escreve assim document.querySelector(".lista"); , dessa maneira ele vai selecionar todas os elementos que tiverem a classe lista, para selecionar uma id faz dessa maneira document.querySelector('#titulo'); e para selecionar uma classe que está dentro de um elemento como uma ul ou ol, faz dessa maneira document.querySelector('ul.lista'); nesse caso caso ele vai selecionar apenas a classe lista que está dentro da ul. O queryselector, ele apenas vai selecionar o primeiro valor que está no html. <br>
+    Para mudar o estilo de algum elemento faz dessa maneira document.querySelector(".lista").style.color = '#FF0000'; mas ele vai fazer isso no primeiro elemento que tiver a classe lista, o outro elemento que tiver a classe lista será ignorado.  </p>
+
+    <h2>querySelectorAll</h2>
+    <p>O querySelectorAll ele retorna uma array, então ele pegará tudo que for informado para selecionar, e faz da seguinte maneira document.querySelectorAll('lista'). 
+        para selecionar selecionar um determinado ítem faremos dessa maneira document.querySelector("ul > li:nth-child(3)"); dessa maneira ele selecionou o terceiro ítem da lista que está dentro de uma ul. <br>
+    Para mudar o estilo quando o seletor for queryselectorall, não podemos fazer como fizemos no queryselector, pois o queryselectorall, ele retorna um array, então teremos que fazer um for, para que o código percorra toda a array da classe, id ou elementos selecionado. Veja um exemplo abaixo: <br>
+     1º cria uma variável para receber o que estamos selecionando para poder manipular, veja abaixo um exemplo: <br>
+    let lista = document.querySelectorAll('li'); <br>
+    2º faz o for para que o código percorra todos os ítens do array <br>
+    for(let i in lista) { <br>
+        lista[i].style.color = '#ff0000'; <br>
+    }
+    </p>
+
+    <h3 class="subtitulo">Ingredientes</h3>
+
+    <ul class="lista">
+        <li>Ovo</li>
+        <li>Chocolate</li>
+        <li>Manteiga</li>
+        <li>Corante</li>
+    </ul>
+
+    <ol class="lista">
+        <li>Ovo</li>
+        <li>Chocolate</li>
+        <li>Manteiga</li>
+        <li>Corante</li>
+    </ol>
+
+    <h3 class="subtitulo">Modo de preparo</h3>
+    <p>Faça XYZ, depois faça ABC</p>
+
+    <script src="scripit.js"></script>
+</body>
+</html>

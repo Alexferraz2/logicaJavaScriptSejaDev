@@ -1,0 +1,34 @@
+/*#exemplo {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border: 1px solid #ccc;
+     
+    
+}
+
+.vermelho {
+    background-color: #ff0000;
+}
+
+.verde {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.azul {
+    background-color: #0000ff;
+} */
+
+/* para a função de trocar de cores */
+
+.verde {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.preto {
+    background-color: #000;
+    color: #fff;
+}
+
