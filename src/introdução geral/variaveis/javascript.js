@@ -18,5 +18,6 @@ console.log(nomecompleto);
 window.alert(nomecompleto);
 console.log('O código vai dar certo')
 console.log("Vamos tentar mais uma vez")
+console.log('Agora vai dar certo!!!')
 
 
